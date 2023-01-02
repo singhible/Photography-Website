@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assests/logo.png"
+import Logo from "../assests/logo-bl.png";
 
 export default function Navbar() {
   return (
@@ -7,9 +7,13 @@ export default function Navbar() {
       <div className="my-3">
         <img src={Logo} alt="Logo" style={{ width: "220px" }} />
       </div>
-      </div>
-  
+      {/* menu */}
+      <ul class="hidden md:flex">
+        <li>Home</li>
+        <li>Photos</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
   );
-};
-
-
+}
